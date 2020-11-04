@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoCov-info</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/ezgif.com-webp-to-png.png">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="/img/ezgif.com-webp-to-png.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+</head>
+<body>
+    <div class="container1" ng-app="MyApp1" ng-controller="MyCtrl1">
+        <header>
+            <nav>
+                <a href="/">
+                    <img src="/img/Component 1 – 1.png" class="logo-top">
+                </a>
+            </nav>
+        </header>
+        <!-- <div class="boxes">
+            <div class="box1">
+                <h2>Confirmed Cases</h2>
+                <br/>
+                <h1 class="number">{{all_data.Global.TotalConfirmed}}</h1>
+            </div>
+            <div class="box2">
+                <h2>Total Recovered</h2>
+                <br/>
+
+                <h1 class="number">{{all_data.Global.TotalRecovered}}</h1>
+            </div>
+            <div class="box3">
+                <h2>Total Deaths</h2>
+                <br/>
+                <h1 class="number">{{all_data.Global.TotalDeaths}}</h1>
+            </div>
+        </div> -->
+        <div class="search-box">
+            <!-- {{title}} -->
+            <input type="text" name="search" placeholder="Search State/UT" class="search" ng-model="countryName">
+        </div>
+        <div class="result">
+            <div class="card">
+                <div>
+                    State
+                </div>
+                <div>
+                    total-confirmed
+                </div>
+                <div>
+                    total-death
+                </div>
+                <div>
+                    total-recovered
+                </div>  
+            </div>
+            <div class="card" ng-repeat="states in states | filter:countryName">
+                <div>
+                    {{states.state}}
+                </div>
+                <div>
+                    {{states.confirmed}}
+                </div>
+                <div>
+                    {{states.deaths}}
+                </div>
+                <div>
+                    {{states.recovered}}
+                </div>  
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

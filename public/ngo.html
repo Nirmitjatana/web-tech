@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <title>GoCov</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/contribute.css">
+</head>
+<body onload="fetchData();">
+    <div class="container">
+        <header>
+            <nav>
+                <a href="../index.html"><img src="/img/Component 1 – 1.png" class="logo-top"></a>
+            </nav>
+        </header>
+        <div class="cmain">
+              <br>  
+        <div class='dmain'>
+            <h2 class="hue">We believe NGOs are one of the best ways to help the needy in these difficult times. Therefore we bring NGOs to you with the information to connect to them and all the other details. If you are a NGO, you can fill the form,once we verify your details we'll list your NGO here.</h2>
+            <div class="data" id="tablebody">
+                <!-- <div class="nc">
+                    <h1>Nirmit Jatana</h1>
+                    <h2>Rajpura, Punjab</h2>
+                    <br>
+                    <a href="nirmitjatana.com">nirmitjatana.com</a><br>
+                    <a href="mailto:nirmitjatana38@gmail.com">nirmitjatana38@gmail.com</a>
+                    <br>
+                    <br>
+                    <h5>
+                        Lorem commodo sunt commodo exercitation ullamco. Eu esse enim sint dolore proident est minim culpa culpa irure aute. Ad velit eiusmod et excepteur ea labore ad in Lorem labore.
+                        Lorem nostrud ut anim proident nisi qui ex elit labore incididunt irure ipsum. Mollit non excepteur qui incididunt excepteur velit et aute laborum nulla. Ipsum eu et enim ea ut magna anim.
+                    </h5>
+                </div>
+                <div class="nc">
+                    <h1>Nirmit Jatana</h1>
+                    <h2>Rajpura, Punjab</h2>
+                    <br>
+                    <a href="nirmitjatana.com">nirmitjatana.com</a><br>
+                    <a href="mailto:nirmitjatana38@gmail.com">nirmitjatana38@gmail.com</a>
+                    <br>
+                    <br>
+                    <h5>
+                        Lorem commodo sunt commodo exercitation ullamco. Eu esse enim sint dolore proident est minim culpa culpa irure aute. Ad velit eiusmod et excepteur ea labore ad in Lorem labore.
+                        Lorem nostrud ut anim proident nisi qui ex elit labore incididunt irure ipsum. Mollit non excepteur qui incididunt excepteur velit et aute laborum nulla. Ipsum eu et enim ea ut magna anim.
+                    </h5>
+                </div> -->
+            </div>
+            <div class="contribute" onclick="showngo()">
+                <br>
+                <br>
+                <br>
+                <br>
+                <button>Add NGO</button>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- <div class="contributor" onclick="showTable()">
+                <button>Ngos</button>
+            </div> -->
+            <div class="conform" id='conform' style="display: none;">
+                <div class="hope">
+                <form   method="POST" action="\ngo">
+                    <label for="name">Name: </label>
+                    <br>
+                    <input type="text" name="name" id="name">
+                    <br>
+                    <br>
+                    <label for="email">Email: </label>
+                    <br>
+                    <input type="email" name="email" id="email">
+                    <br>
+                    <br>
+                    <label for="num">Number: </label>
+                    <br>
+                    <input type="number" name="num" id="num">
+                    <br>
+                    <br>
+                    <label for="place">Place: </label>
+                    <br>
+                    <input type="text" name="place" id="place">
+                    <br>
+                    <br>
+                    <label for="state">state: </label>
+                    <br>
+                    <input type="text" name="state" id="state">
+                    <br>
+                    <br>
+                    <label for="des">Description:</label>
+                    <br>
+                    <input type="text" name="des" id="des">
+                    <br>
+                    <br>
+                    <label for="url">Url:</label>
+                    <br>
+                    <input type="text" name="url" id="url">
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit" class="but">
+                    <br>
+                    <br>
+                </form>
+            </div>
+            </div>
+            <!-- <div class="listcon"> -->
+                
+                
+                <!-- <table id='table' >
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>email</td>
+                            <td>Place</td>
+                            <td>State</td>
+                            <td>Description</td>
+                            <td>url</td>
+                        </tr>
+                    </thead>
+                    <tbody id='tablebody'>
+                        
+
+                    </tbody>
+                </table> -->
+                <!-- <div class="result">
+                    <div class="card">
+                        <div>
+                            Country
+                        </div>
+                        <div>
+                            Email
+                        </div>
+                        <div>
+                            Place
+                        </div>
+                        <div>
+                            State
+                        </div>  
+                        <div>
+                            Description
+                        </div>  
+                        <div>
+                            Website
+                        </div>  
+                    </div>
+                    <div class="card" ng-repeat="country in countries | filter:countryName">
+                        <div>
+                            {{country.Country}}
+                        </div>
+                        <div>
+                            {{country.TotalConfirmed}}
+                        </div>
+                        <div>
+                            {{country.TotalDeaths}}
+                        </div>
+                        <div>
+                            {{country.TotalRecovered}}
+                        </div>  
+                    </div>
+                    
+                </div> -->
+                
+            <!-- </div> -->
+        </div>
+    </div>
+    
+    <script src="/js/contribute.js"></script>
+</body>
+</html>
