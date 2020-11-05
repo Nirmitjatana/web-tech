@@ -49,7 +49,7 @@ function showngo() {
   }
 }
 function fetchData(){
-fetch('http://localhost:8080/ngo').then((response)=>{
+fetch('/ngo').then((response)=>{
   response.json().then((data)=>{
     let html=``
     data.forEach(element => {

@@ -5,6 +5,8 @@ const app = express()
 const ngo = require('./database/models')
 const bodyParser = require('body-parser')
 
+const port = process.env.PORT || 8080
+
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
@@ -78,6 +80,6 @@ app.post("/ngo",(req,res)=>{
 app.get('*', (req,res) => {
     res.send("<h1>404 page Not Found</h1>")
 })
-app.listen(8080, () => {
-    console.log("Running on Port 8080");
+app.listen(port, () => {
+    console.log("Running on Port , ",port);
 })
