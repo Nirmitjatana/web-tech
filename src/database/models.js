@@ -2,7 +2,7 @@ const mongoose =require('mongoose')
 
 require('dotenv/config')
 
-mongoose.connect(process.env.Connect_data,{
+mongoose.connect('mongodb://127.0.0.1:27017/ngo_test',{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology:true
