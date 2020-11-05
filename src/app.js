@@ -68,7 +68,7 @@ app.post("/ngo",(req,res)=>{
     }
 
     console.log(datasend)
-    const ngos = new ngo(datasend)
+    const ngos = new ngos(datasend)
     ngos.save().then(()=>{
         res.redirect('/ngo.html')
     }).catch((e)=>{

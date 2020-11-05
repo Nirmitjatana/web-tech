@@ -9,7 +9,7 @@ mongoose.connect(process.env.Connect_data,{
 }
 )
 
-const ngo = mongoose.model('ngo',{
+const ngo = mongoose.model('ngos',{
     name: {
         type:String,
         trim:true
